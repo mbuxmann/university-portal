@@ -1,0 +1,20 @@
+
+
+<div class="row mt-4">
+    <div class="col-md-6 m-auto">
+        <div class="card card-body">
+        <h3 class="text-center">Welcome <%= studentName %> <%= studentSurname %></h3>
+        <h1 class="text-center mt-2"><i class="fas fa-user-graduate fa-5x"></i></h1>
+        <div class="mt-2">
+            <h5>Name: <%= studentName %></h5>
+            <h5>Surname: <%= studentSurname %></h5>
+            <h5>Email Address: <%= studentEmail %></h5>
+            <h5>Age: <%= studentAge %></h5>
+            <h5>Degree: <%= studentDegree %></h5>
+            <h5>Favourite Course: <%= studentFavouriteCourse %></h5>
+        </div>
+        <a href="/students/editprofile" class="btn btn-primary mb-2">Edit Profile</a>
+        <a href="/students/logout" class="btn btn-secondary">Logout</a>
+      </div>
+    </div>
+</div>

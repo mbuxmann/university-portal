@@ -1,0 +1,68 @@
+
+
+<div class="row mt-4">
+        <div class="col-md-6 m-auto">
+            <div class="card card-body">
+            <h3 class="text-center"><%= studentName %> <%= studentSurname %></h3>
+            <h1 class="text-center mt-2"><i class="fas fa-user-graduate fa-5x"></i></h1>
+            <div class="mt-2">
+                    <form action="/students/editprofile" method="POST">
+                        <div class="form-group">
+                          <label for="name">Name</label>
+                          <input
+                            type="name"
+                            id="name"
+                            name="name"
+                            class="form-control"
+                            value="<%= studentName %>"
+                          />
+                        </div>
+                        <div class="form-group">
+                          <label for="surname">Surname</label>
+                          <input
+                            type="surname"
+                            id="surname"
+                            name="surname"
+                            class="form-control"
+                            value="<%= studentSurname %>"
+                          />
+                        </div>
+                        <div class="form-group">
+                        <label for="age">Age</label>
+                        <input
+                            type="age"
+                            id="age"
+                            name="age"
+                            class="form-control"
+                            value="<%= studentAge %>"
+                        />
+                        </div>
+                        <div class="form-group">
+                        <label for="degree">Degree</label>
+                        <input
+                            type="degree"
+                            id="degree"
+                            name="degree"
+                            class="form-control"
+                            value="<%= studentDegree %>"
+                        />
+                        </div>
+                        <div class="form-group">
+                        <label for="favouriteCourse">Favourite Course</label>
+                        <input
+                            type="favouriteCourse"
+                            id="favouriteCourse"
+                            name="favouriteCourse"
+                            class="form-control"
+                            value="<%= studentFavouriteCourse %>"
+                        />
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block mb-2">Save Changes</button>
+                      
+                    </form>
+            </div>
+            <a href="/dashboard" class="btn btn-danger mb-2">Cancel Changes</a>
+            <a href="/students/logout" class="btn btn-secondary">Logout</a>
+          </div>
+        </div>
+    </div>
